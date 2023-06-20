@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body onload="alert('You are pidoras')">
+<body>
     <h1>HEllO!</h1>
 
     <!-- <script src="script.js"></script> -->
@@ -16,12 +16,36 @@
     <!-- <script src="lesson8-loops.js"></script>    -->
     <!-- <script src="lesson9-alert.js"></script>   -->
     <!-- <script src="lesson10-func.js"></script>   -->
+    <!-- <script src="lesson11-actions.js"></script>   -->
 
-    <button name="kitten" onclick="onclickbutton(this)">click on me</button>
-    <!-- <button ondblclick="alert('hiiii')">click!!</button> -->
-    <!-- <p onmouseover="alert('ohh')">Оскільки одна з діагоналей паралелограма дорівнює 17 см, ми можемо вважати її висотою паралелограма, а сторони основи - 9 см і 10 см. площу повної поверхні паралелепіпеда. Таким чином, ми можемо віднести площу паралелограма з площі повної поверхні:</p> -->
-    
-    <input oninput="onInput(this)">
-    <script src="lesson11-actions.js"></script>  
+    <!-- <p id="text" title="simple text">eppopfrroprepoeppror</p>
+    <span class="forspan">Span 1</span>
+    <span class="forspan">Span 2</span>
+    <span class="forspan">Span 3</span> -->
+
+    <!-- <form id="main-form" onsubmit="return CheckForm(this)" method="post"> -->
+    <form id="main-form"  method="post">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="Write your name">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <label for="password2">Password Again</label>
+        <input id="password2" name="password2" type="password">
+        <br><br>
+        <span for="sex">Sex</span>
+        <br><br>
+        <input type="radio" name="sex" id="male" value="male">
+        <label for="male">Male</label>
+        <br><br>
+        <input type="radio" name="sex" id="female" value="female">
+        <label for="female">Female</label>
+        <br><br>
+        <div id="error" style="color:brown"></div>
+        <input type="submit" name="submit" value="submit">
+    </form>    
+
+     <script src="lesson12-forms.js"></script>       
 </body>
 </html>
